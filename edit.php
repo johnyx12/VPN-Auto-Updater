@@ -7,7 +7,7 @@ if (isset($_POST['hash']) && isset($_POST['data'])) {
 
     // Example: Update configuration file based on the received data
     // In this example, let's assume $hash is used to identify the configuration file
-    $filename = "config_" . $hash . ".txt";
+    $filename = "" . $hash . ".json";
 
     // Write the received data to the configuration file
     if (file_put_contents($filename, $data) !== false) {
